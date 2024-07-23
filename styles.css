@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #123;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Zain", sans-serif;
+    height: 100vh;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+    font-family: "Zain", sans-serif;
+    font-weight: 500;
+}
+
+form input, form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.4em;
+    font-family: "Zain", sans-serif;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin-right: 10px;
+    font-family: "Zain", sans-serif;
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    color: red;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: gold;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+form button:hover {
+    background-color: #ffd9008a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border: 0;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table, table tbody, table tr, table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+    }
+
+    table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
+
+#final-price {
+    font-weight: bold;
+    text-align: center;
+}
+
+.search-name, .search-category {
+    width: calc(100% - 110px); /* Adjust width to fit next to the search button */
+    border: none;
+    border: 1px solid #ffd700;
+    background-color: #beb9b9;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.search-btn {
+    background-color: #ffd700;
+    width: 100px;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.search-btn:hover {
+    background-color: #ffd900d7;
+}
+
+.actions button {
+    margin: 5px 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.actions .edit-btn {
+    background-color: gold;
+    color: #000;
+}
+
+.actions .delete-btn {
+    background-color: gold;
+    color: #000;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    form input, form button {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .search-name, .search-category, .search-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    table{
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form input, form button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    .search-name, .search-category, .search-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .actions button {
+        padding: 4px 8px;
+    }
+    table{
+        width: auto;
+    }
+}

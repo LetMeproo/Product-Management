@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Managment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>إدارة المنتجات</h1>
+        <form id="product-form">
+            <input type="text" id="product-name" placeholder="اسم المنتج" required>
+            <input type="number" id="product-quantity" placeholder="الكمية المتوفرة" required>
+            <input type="text" id="product-category" placeholder="تصنيف المنتج" required>
+            <input type="number" id="product-price" placeholder="سعر المنتج" required>
+            <input type="number" id="product-expenses" placeholder="المصروفات">
+            <label>
+                <input type="checkbox" id="product-discount"> هل يوجد خصم
+            </label>
+            <button type="button" onclick="calculateFinalPrice()">حساب السعر النهائي</button>
+            <button type="submit">إضافة المنتج</button>
+            <p id="final-price">السعر النهائي: </p>
+        </form>
+        <div>
+            <input type="text" class="search-name" id="search-name" placeholder="البحث بالاسم">
+            <input type="text" class="search-category" id="search-category" placeholder="البحث بالتصنيف">
+            <button type="button" class="search-btn" onclick="performSearch()">بحث</button>
+        </div>
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>اسم المنتج</th>
+                    <th>الكمية المتوفرة</th>
+                    <th>تصنيف المنتج</th>
+                    <th>سعر المنتج</th>
+                    <th>المصروفات</th>
+                    <th>يوجد خصم</th>
+                    <th>إجراءات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- سيتم ملء هذه المنطقة بالمنتجات -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
