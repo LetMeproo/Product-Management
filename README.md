@@ -15,9 +15,9 @@ Responsive Design: Ensuring the application looks good and works well on all scr
 Price Calculation Logic: Implementing the logic to calculate the final price, including expenses divided by quantity and applying discounts, required careful planning and testing.
 Local Storage Integration: Storing and retrieving product data using the browser's local storage to ensure data persistence even after page reloads.
 Project Structure
-The project consists of three main files: https://letmeproo.github.io/Product-Management/
-
+The project consists of three main files
 index.html: The main HTML file containing the structure of the application.
 styles.css: The CSS file for styling the application.
 script.js: The JavaScript file for adding functionality to the application.
-Test the system in live demo :
+Test the system in live demo :  https://letmeproo.github.io/Product-Management/
+
